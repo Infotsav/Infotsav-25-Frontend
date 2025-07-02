@@ -1,29 +1,9 @@
 // import React from 'react'
-import { useState } from "react";
-import ContactInfo from "../Components/Contact/ContactInfo";
-import Map from "../Components/Contact/Map";
-import ParticlesBackground from "../Components/ParticlesBackground";
 
 function ContactUs() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
-
-    const handleFormSubmit = (e: any) => {
-        e.preventDefault();
-        console.log(formData);
-    };
-
-    const handleInputChange = (e: any) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
 
     return (
+<<<<<<< HEAD
         <main className="flex flex-col pt-[100px] w-full text-white items-center px-4 sm:px-6 b-16">
             <section className="flex flex-col w-full items-center mt-6 sm:mt-8">
                 <div className="relative z-[-1]">
@@ -79,6 +59,10 @@ function ContactUs() {
                     <ContactInfo />
                 </div>
             </section>
+=======
+        <main className="flex flex-col mt-[100px] w-full text-white items-center px-4 sm:px-6 b-16">
+            ContactUs
+>>>>>>> a331ce39967023072a0c96480c61ad7e851ab65d
         </main>
     );
 }

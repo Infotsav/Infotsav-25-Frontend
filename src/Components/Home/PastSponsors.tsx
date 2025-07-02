@@ -1,8 +1,6 @@
-// import React from "react";
-import Slider from "react-infinite-logo-slider";
-import { pastSponsors1, pastSponsors2 } from "../../constants/PastSponsors";
-import PastSponsorCard from "./PastSponsorCard";
+import React from 'react'
 
+<<<<<<< HEAD
 const PastSponsors = () => {
     return (
         <>
@@ -66,5 +64,14 @@ const PastSponsors = () => {
         </>
     );
 };
+=======
+function PastSponsors() {
+  return (
+    <div>
+      Past Sponsors
+    </div>
+  )
+}
+>>>>>>> a331ce39967023072a0c96480c61ad7e851ab65d
 
-export default PastSponsors;
+export default PastSponsors

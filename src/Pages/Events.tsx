@@ -1,12 +1,15 @@
 // import React from 'react'
 // import ComingSoon from '../Components/ComingSoon'
-import ParticlesBackground from "../Components/ParticlesBackground";
+
 import MajorEvent from "../Components/Events/MajorEvent";
-import Tabs from "../Components/Events/Tabs";
+// import ParticlesBackground from "../Components/ParticlesBackground";
+
+
 
 function Events() {
   return (
     <>
+<<<<<<< HEAD
       <main className="font-pixelify text-[#FEFEFE] max-w-[1440px] mx-auto relative">
         {/* Particles Background Layer */}
         <div className="absolute inset-0 w-full h-full" style={{ zIndex: 1 }}>
@@ -25,6 +28,14 @@ function Events() {
             <Tabs />
           </section>
         </div>
+=======
+      <main className="font-pixelify text-[#FEFEFE] max-w-[1440px] mx-auto">
+        {/* <ParticlesBackground /> */}
+        <section className="my-20">
+          <MajorEvent />
+        </section>
+
+>>>>>>> a331ce39967023072a0c96480c61ad7e851ab65d
       </main>
     </>
   );

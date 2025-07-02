@@ -4,23 +4,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 import MainLayout from "./MainLayout";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
-import ContactUs from "./Pages/ContactUs";
 import Events from "./Pages/Events";
-import Login from "./Pages/Login";
-import MeetTheTeam from "./Pages/MeetTheTeam";
-import Sponsors from "./Pages/Sponsors";
 import NotFound from "./Pages/NotFound";
-import EventDetails from "./Pages/EventDetails.tsx";
-import Dashboard from "./Pages/Dashboard.tsx";
 
 import "./App.css";
+<<<<<<< HEAD
 import CampusAmba from "./Pages/CampusAmba.tsx";
 import VantaFogBackground from "./Components/VantaFogBackground";
+=======
+>>>>>>> a331ce39967023072a0c96480c61ad7e851ab65d
 
 function App() {
     return (
         <Router>
+<<<<<<< HEAD
             <div className="relative min-h-screen">
                 {/* Global Fog Background - Persist across navigation */}
                 <VantaFogBackground />
@@ -47,6 +44,26 @@ function App() {
                     </Routes>
                 </div>
             </div>
+=======
+            <Routes>
+                <Route element={<MainLayout />}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<Home />} />
+                    <Route path="/contact" element={<Home />} />
+                    <Route path="/events" element={<Events />} />
+                    <Route
+                        path="/eventdetails/:category/:id"
+                        element={<Home />}
+                    />
+                    <Route path="/register" element={<Home />} />
+                    <Route path="/dashboard" element={<Home />} />
+                    <Route path="/meet-the-team" element={<Home />} />
+                    <Route path="/sponsors" element={<Home />} />
+                    <Route path="/campus-ambassador" element={<Home />} />
+                </Route>
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+>>>>>>> a331ce39967023072a0c96480c61ad7e851ab65d
         </Router>
     );
 }

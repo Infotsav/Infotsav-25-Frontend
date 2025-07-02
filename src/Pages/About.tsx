@@ -1,10 +1,17 @@
 // import React from 'react'
-import ParticlesBackground from "../Components/ParticlesBackground"
+// import ParticlesBackground from "../Components/ParticlesBackground"
 
 function About() {
   return (
+<<<<<<< HEAD
     <div className="max-w-7xl mx-auto pt-[100px] px-4">
       <div className="absolute -z-10"><ParticlesBackground /></div>
+=======
+
+    <div className="max-w-7xl mt-[100px] mx-auto">
+
+      {/* <div className="absolute -z-10"><ParticlesBackground /></div> */}
+>>>>>>> a331ce39967023072a0c96480c61ad7e851ab65d
       <h1 className="scroll-m-20 text-[#FEFEFE] text-[16vw] md:text-[9vw] tracking-tight text-center font-pixelify mb-5 md:mb-0">
         About Us
       </h1>
