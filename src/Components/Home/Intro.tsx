@@ -1,12 +1,15 @@
 import stars from "../../assets/stars.png";
 import splash from "../../assets/splash.png";
 import IntroNavBar from "./IntroNavBar";
+// import VantaFogBackground from "../VantaFogBackground";
 // import HomePageVideo from "../../assets/HomePageVideo/HomePageVideo.mp4";
 
 const Intro = () => {
     return (
-        <div className="relative md:h-screen sm:h-[70vh] h-[50vh] bg-[#3a1119] w-full">
-            <div className="absolute w-full flex flex-col items-center gap-5">
+        <div className="relative md:h-screen sm:h-[70vh] h-[50vh] w-full" style={{ zIndex: 10 }}>
+            {/* Vanta Fog Background - Removed */}
+            
+            <div className="absolute w-full flex flex-col items-center gap-5" style={{ zIndex: 1 }}>
                 <IntroNavBar />
                 <div
                     className="relative w-full md:h-full h-[50vh] sm:h-[70vh] flex justify-center items-center
@@ -30,15 +33,17 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bg-grid h-full w-full"></div>
-            <img className="absolute lg:h-32 md:h-24 h-16 mt-5" src={stars} />
+            
+            <img className="absolute lg:h-32 md:h-24 h-16 mt-5" src={stars} style={{ zIndex: 1 }} />
             <img
                 className="absolute bottom-0 right-0 lg:h-32 md:h-24 h-16 mb-5 rotate-180 transform scale-y-[-1]"
                 src={stars}
+                style={{ zIndex: 1 }}
             />
             <img
                 src={splash}
                 className="absolute bottom-0 left-0 lg:h-32 md:h-24 h-16"
+                style={{ zIndex: 1 }}
             />
         </div>
     );

@@ -6,7 +6,7 @@ import PastSponsorCard from "./PastSponsorCard";
 const PastSponsors = () => {
     return (
         <>
-            <div className="relative h-fit pb-10 bg-[#070707] w-full">
+            <div className="relative h-fit pb-10 bg-[#070707] w-full" style={{ zIndex: 10 }}>
                 <div className="h-full w-full bg-grid absolute"></div>
                 <div className="border-[#8BABBF] md:border-x-[12px] border-x-[10px] p-6 mx-auto w-fit">
                     <h2 className="font-pixelify text-white z-2 lg:text-6xl sm:text-4xl text-2xl">

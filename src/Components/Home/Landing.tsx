@@ -1,26 +1,22 @@
 // import React from 'react';
 import ParticlesBackground from '../ParticlesBackground';
-import Mountains from '../../assets/far-mountains.png';
+import TitleSvg from '../../../public/LOGO.svg';
 
 const Landing = () => {
     return (
-        <div className='relative bg-black h-screen w-full overflow-hidden'>
-            <ParticlesBackground />
-
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <h1 className='text-[#FEFEFE] md:text-[12vw] text-[70px] font-pixelify z-10'>
-                    Infotsav
-                </h1>
-                <h2 className='text-[#BEFF04] text-[6vw] font-pixelify z-10 md:mt-[-40px]'>
-                    2024
-                </h2>
+        <div className='relative bg-transparent h-screen w-full overflow-hidden'>
+            {/* Particles Layer */}
+            <div className="absolute inset-0 w-full h-full" style={{ zIndex: 1 }}>
+                <ParticlesBackground />
             </div>
 
-            <img
-                className="absolute bottom-0 left-0 md:h-auto h-[800px] w-full object-cover"
-                src={Mountains}
-                alt=""
-            />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center" style={{ zIndex: 3 }}>
+                <img
+                    src={TitleSvg}
+                    alt="Infotsav 2025"
+                    className="logo title"
+                />
+            </div>
         </div>
     );
 }

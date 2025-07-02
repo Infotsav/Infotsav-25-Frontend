@@ -24,7 +24,7 @@ function ContactUs() {
     };
 
     return (
-        <main className="flex flex-col mt-[100px] w-full text-white items-center px-4 sm:px-6 b-16">
+        <main className="flex flex-col pt-[100px] w-full text-white items-center px-4 sm:px-6 b-16">
             <section className="flex flex-col w-full items-center mt-6 sm:mt-8">
                 <div className="relative z-[-1]">
                     <ParticlesBackground />

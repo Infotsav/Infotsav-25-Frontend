@@ -3,8 +3,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 
-const ParticlesBackground = () => {
-
+const CloudParticlesBackground = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
         await loadSlim(engine);
@@ -14,16 +13,15 @@ const ParticlesBackground = () => {
         await console.log(container);
     }, []);
 
-
     return (
         <Particles
-            id="tsparticles"
+            id="cloud-particles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
                 background: {
                     color: {
-                        value: "transparent",
+                        value: "#0a0a0a",
                     },
                 },
                 fpsLimit: 60,
@@ -34,23 +32,29 @@ const ParticlesBackground = () => {
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: "grab",
                         },
                         resize: true,
                     },
                     modes: {
-                        repulse: {
-                            distance: 80,
-                            duration: 0.6,
+                        grab: {
+                            distance: 140,
+                            links: {
+                                opacity: 0.5,
+                            },
                         },
                     },
                 },
                 particles: {
                     color: {
-                        value: ["#ffffff", "#f0f0f0", "#e0e0e0", "#d0d0d0", "#c0c0c0"],
+                        value: ["#ffffff", "#f8f8f8", "#f0f0f0", "#e8e8e8"],
                     },
                     links: {
-                        enable: false,
+                        enable: true,
+                        distance: 150,
+                        color: "#ffffff",
+                        opacity: 0.2,
+                        width: 1,
                     },
                     move: {
                         direction: "none",
@@ -58,23 +62,27 @@ const ParticlesBackground = () => {
                         outModes: {
                             default: "bounce",
                         },
-                        random: true,
-                        speed: { min: 0.2, max: 0.8 },
+                        random: false,
+                        speed: { min: 0.1, max: 0.3 },
                         straight: false,
+                        gravity: {
+                            enable: true,
+                            acceleration: 0.02,
+                        },
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1200,
                         },
-                        value: 225,
+                        value: 80,
                     },
                     opacity: {
-                        value: { min: 0.05, max: 0.35 },
+                        value: { min: 0.1, max: 0.6 },
                         animation: {
                             enable: true,
-                            speed: 0.5,
-                            minimumValue: 0.05,
+                            speed: 0.3,
+                            minimumValue: 0.1,
                             sync: false,
                         },
                     },
@@ -82,22 +90,22 @@ const ParticlesBackground = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 0.5, max: 2.0 },
+                        value: { min: 3, max: 8 },
                         animation: {
                             enable: true,
-                            speed: 1,
-                            minimumValue: 0.3,
+                            speed: 0.5,
+                            minimumValue: 2,
                             sync: false,
                         },
                     },
                     blur: {
                         enable: true,
-                        value: { min: 0.5, max: 2 },
+                        value: { min: 2, max: 5 },
                     },
                     shadow: {
                         enable: true,
                         color: "#ffffff",
-                        blur: 2,
+                        blur: 6,
                         offset: {
                             x: 0,
                             y: 0,
@@ -105,8 +113,8 @@ const ParticlesBackground = () => {
                     },
                     twinkle: {
                         enable: true,
-                        frequency: 0.05,
-                        opacity: 1,
+                        frequency: 0.02,
+                        opacity: 0.8,
                     },
                 },
                 detectRetina: true,
@@ -115,4 +123,4 @@ const ParticlesBackground = () => {
     );
 };
 
-export default ParticlesBackground;
+export default CloudParticlesBackground; 
