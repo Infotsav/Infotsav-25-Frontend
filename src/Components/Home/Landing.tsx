@@ -1,31 +1,5 @@
-<<<<<<< HEAD
-// import React from 'react';
-import ParticlesBackground from '../ParticlesBackground';
-import TitleSvg from '../../../public/LOGO.svg';
-
-const Landing = () => {
-    return (
-        <div className='relative bg-transparent h-screen w-full overflow-hidden'>
-            {/* Particles Layer */}
-            <div className="absolute inset-0 w-full h-full" style={{ zIndex: 1 }}>
-                <ParticlesBackground />
-            </div>
-
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center" style={{ zIndex: 3 }}>
-                <img
-                    src={TitleSvg}
-                    alt="Infotsav 2025"
-                    className="logo title"
-                />
-            </div>
-        </div>
-    );
-}
-=======
 import { useEffect, useRef } from 'react';
-// import ParticlesBackground from '../ParticlesBackground';
 import { gsap } from 'gsap';
-
 
 const Landing: React.FC = () => {
   const container = useRef<HTMLDivElement>(null);
@@ -41,12 +15,11 @@ const Landing: React.FC = () => {
         ease: 'back.out(1.7)'
       });
     }, container);
->>>>>>> a331ce39967023072a0c96480c61ad7e851ab65d
 
     return () => ctx.revert();
   }, []);
 
-  const onMouseEnter = (e) => {
+  const onMouseEnter = (e: React.MouseEvent<HTMLImageElement>) => {
     if (!imgRef.current) return;
     const rect = imgRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -82,8 +55,6 @@ const Landing: React.FC = () => {
       className="w-full h-screen flex items-center justify-center"
       style={{ perspective: '1000px' }}
     >
-      {/* <ParticlesBackground /> */}
-
       <img
         ref={imgRef}
         src="/src/assets/2025/LandingPage/HeroText.svg"
