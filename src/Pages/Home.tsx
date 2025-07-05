@@ -5,6 +5,7 @@ import PastSponsors from "../Components/Home/PastSponsors";
 // import Landing from "../Components/Home/Landing";
 import Hero from "../Components/Home/Hero";
 import EventCaraousel from "../Components/Home/EventCaraousel";
+import Gallery from "../Components/Home/Gallery";
 // import FAQ from "../Components/Home/Faqs.tsx";
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
             <Hero />
             <Intro />
             <EventCaraousel />
+            <Gallery />
             {/* <FAQ /> */}
             <PastSponsors />
         </div>
