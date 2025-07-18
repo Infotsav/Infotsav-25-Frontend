@@ -8,6 +8,7 @@ import Events from "./Pages/Events";
 import NotFound from "./Pages/NotFound";
 
 import "./App.css";
+import About from "./Pages/About";
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<Home />} />
+                    <Route path="/about" element={<About/>} />
                     <Route path="/contact" element={<Home />} />
                     <Route path="/events" element={<Events />} />
                     <Route

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LayoutGrid } from "../ui/layout-grid";
-import { Calendar, Users, Trophy, Zap, ChevronLeft, ChevronRight } from "lucide-react";
+import { Calendar, Users, Trophy, Zap, ChevronLeft, ChevronRight, Music, Star } from "lucide-react";
 
 const Gallery = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -10,34 +10,19 @@ const Gallery = () => {
       id: 1,
       content: (
         <div className="text-white">
-          <h3 className="text-2xl font-bold mb-2">Tech Tactics</h3>
-          <p className="text-sm opacity-80">Strategic coding challenges</p>
+          <h3 className="text-2xl font-bold mb-2">Pronite 1</h3>
+          <p className="text-sm opacity-80">Cultural night celebration</p>
           <div className="flex items-center mt-2">
-            <Trophy className="w-4 h-4 mr-2" />
-            <span className="text-xs">Competition</span>
-          </div>
-        </div>
-      ),
-      className: "col-span-1 row-span-1",
-      thumbnail: "/src/assets/EventsPage/tech_tactics.jpg",
-    },
-    {
-      id: 2,
-      content: (
-        <div className="text-white">
-          <h3 className="text-2xl font-bold mb-2">Blazing Wheel</h3>
-          <p className="text-sm opacity-80">High-speed robotics challenge</p>
-          <div className="flex items-center mt-2">
-            <Zap className="w-4 h-4 mr-2" />
-            <span className="text-xs">Robotics</span>
+            <Music className="w-4 h-4 mr-2" />
+            <span className="text-xs">Cultural</span>
           </div>
         </div>
       ),
       className: "col-span-2 row-span-2",
-      thumbnail: "/src/assets/EventsPage/blazingWheel.jpg",
+      thumbnail: "/src/assets/EventImages/Pronite_1.JPG",
     },
     {
-      id: 3,
+      id: 2,
       content: (
         <div className="text-white">
           <h3 className="text-2xl font-bold mb-2">Pinnacle</h3>
@@ -48,74 +33,60 @@ const Gallery = () => {
           </div>
         </div>
       ),
-      className: "col-span-1 row-span-2",
-      thumbnail: "/src/assets/EventsPage/pinnacle.jpg",
+      className: "col-span-1 row-span-1",
+      thumbnail: "/src/assets/EventImages/Pinnacle.JPG",
+    },
+
+    {
+      id: 3,
+      content: (
+        <div className="text-white">
+          <h3 className="text-2xl font-bold mb-2">Code Rush</h3>
+          <p className="text-sm opacity-80">Fast-paced coding competition</p>
+          <div className="flex items-center mt-2">
+            <Zap className="w-4 h-4 mr-2" />
+            <span className="text-xs">Competition</span>
+          </div>
+        </div>
+      ),
+      className: "col-span-1 row-span-1",
+      thumbnail: "/src/assets/EventImages/Code_rush.JPG",
     },
     {
       id: 4,
       content: (
         <div className="text-white">
-          <h3 className="text-2xl font-bold mb-2">Blogathon</h3>
-          <p className="text-sm opacity-80">Creative writing challenge</p>
+          <h3 className="text-2xl font-bold mb-2">RoboWars</h3>
+          <p className="text-sm opacity-80">Epic robot battles</p>
           <div className="flex items-center mt-2">
-            <Calendar className="w-4 h-4 mr-2" />
-            <span className="text-xs">Creative</span>
+            <Trophy className="w-4 h-4 mr-2" />
+            <span className="text-xs">Robotics</span>
           </div>
         </div>
       ),
       className: "col-span-1 row-span-1",
-      thumbnail: "/src/assets/EventsPage/blogathon.jpg",
+      thumbnail: "/src/assets/EventImages/Robowars.JPG",
     },
     {
       id: 5,
       content: (
         <div className="text-white">
-          <h3 className="text-2xl font-bold mb-2">Music Album</h3>
-          <p className="text-sm opacity-80">Musical innovation showcase</p>
+          <h3 className="text-2xl font-bold mb-2">Pronite 2</h3>
+          <p className="text-sm opacity-80">Musical extravaganza</p>
           <div className="flex items-center mt-2">
-            <Users className="w-4 h-4 mr-2" />
+            <Music className="w-4 h-4 mr-2" />
             <span className="text-xs">Cultural</span>
           </div>
         </div>
       ),
-      className: "col-span-2 row-span-1",
-      thumbnail: "/src/assets/EventsPage/musicAlbum.jpg",
+      className: "col-span-1 row-span-2",
+      thumbnail: "/src/assets/EventImages/Pronite_2.JPG",
     },
     {
       id: 6,
       content: (
         <div className="text-white">
-          <h3 className="text-2xl font-bold mb-2">Major Event</h3>
-          <p className="text-sm opacity-80">Premier tech showcase</p>
-          <div className="flex items-center mt-2">
-            <Trophy className="w-4 h-4 mr-2" />
-            <span className="text-xs">Major</span>
-          </div>
-        </div>
-      ),
-      className: "col-span-1 row-span-1",
-      thumbnail: "/src/assets/EventsPage/majorEvent.jpeg",
-    },
-    {
-      id: 7,
-      content: (
-        <div className="text-white">
-          <h3 className="text-2xl font-bold mb-2">Minor Event</h3>
-          <p className="text-sm opacity-80">Quick tech challenges</p>
-          <div className="flex items-center mt-2">
-            <Zap className="w-4 h-4 mr-2" />
-            <span className="text-xs">Quick</span>
-          </div>
-        </div>
-      ),
-      className: "col-span-1 row-span-1",
-      thumbnail: "/src/assets/EventsPage/minorEvent.png",
-    },
-    {
-      id: 8,
-      content: (
-        <div className="text-white">
-          <h3 className="text-2xl font-bold mb-2">Hackathon</h3>
+          <h3 className="text-2xl font-bold mb-2">Hackatron</h3>
           <p className="text-sm opacity-80">24-hour coding marathon</p>
           <div className="flex items-center mt-2">
             <Trophy className="w-4 h-4 mr-2" />
@@ -123,14 +94,77 @@ const Gallery = () => {
           </div>
         </div>
       ),
+      className: "col-span-1 row-span-2",
+      thumbnail: "/src/assets/EventImages/Hackatron.JPG",
+    },
+
+    // Page 2 - Mixed Events
+    {
+      id: 7,
+      content: (
+        <div className="text-white">
+          <h3 className="text-2xl font-bold mb-2">RoboMaze</h3>
+          <p className="text-sm opacity-80">Autonomous robot navigation</p>
+          <div className="flex items-center mt-2">
+            <Zap className="w-4 h-4 mr-2" />
+            <span className="text-xs">Robotics</span>
+          </div>
+        </div>
+      ),
       className: "col-span-2 row-span-2",
-      thumbnail: "/src/assets/EventsPage/tech_tactics.jpg",
+      thumbnail: "/src/assets/EventImages/RoboMaze.JPG",
+    },
+    {
+      id: 8,
+      content: (
+        <div className="text-white">
+          <h3 className="text-2xl font-bold mb-2">Pronite 3</h3>
+          <p className="text-sm opacity-80">Dance and performance</p>
+          <div className="flex items-center mt-2">
+            <Music className="w-4 h-4 mr-2" />
+            <span className="text-xs">Cultural</span>
+          </div>
+        </div>
+      ),
+      className: "col-span-1 row-span-1",
+      thumbnail: "/src/assets/EventImages/Pronite_3.JPG",
+    },
+    {
+      id: 9,
+      content: (
+        <div className="text-white">
+          <h3 className="text-2xl font-bold mb-2">Closing Ceremony</h3>
+          <p className="text-sm opacity-80">Grand finale celebration</p>
+          <div className="flex items-center mt-2">
+            <Users className="w-4 h-4 mr-2" />
+            <span className="text-xs">Ceremony</span>
+          </div>
+        </div>
+      ),
+      className: "col-span-1 row-span-2",
+      thumbnail: "/src/assets/EventImages/Closing_ceremony.JPG",
+    },
+    {
+      id: 10,
+      content: (
+        <div className="text-white">
+          <h3 className="text-2xl font-bold mb-2">Pronite 4</h3>
+          <p className="text-sm opacity-80">Final cultural night</p>
+          <div className="flex items-center mt-2">
+            <Music className="w-4 h-4 mr-2" />
+            <span className="text-xs">Cultural</span>
+          </div>
+        </div>
+      ),
+      className: "col-span-2 row-span-1",
+      thumbnail: "/src/assets/EventImages/Pronite_4.JPG",
+      imagePosition: "object-bottom",
     },
   ];
 
-  // Split cards into two pages
-  const page1Cards = allCards.slice(0, 4);
-  const page2Cards = allCards.slice(4, 8);
+  // Split cards into two pages (5 cards per page)
+  const page1Cards = allCards.slice(0, 5);
+  const page2Cards = allCards.slice(5, 10);
 
   const pages = [page1Cards, page2Cards];
 
@@ -151,8 +185,17 @@ const Gallery = () => {
         </p>
       </div>
       
-      <div className="relative w-full h-full">
-        <LayoutGrid cards={pages[currentPage]} />
+      <div className="relative w-full h-full overflow-hidden">
+        <div 
+          className="flex transition-transform duration-500 ease-in-out h-full"
+          style={{ transform: `translateX(-${currentPage * 100}%)` }}
+        >
+          {pages.map((pageCards, pageIndex) => (
+            <div key={pageIndex} className="w-full flex-shrink-0 h-full">
+              <LayoutGrid cards={pageCards} />
+            </div>
+          ))}
+        </div>
         
         {/* Navigation Arrows */}
         <button
@@ -192,3 +235,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
